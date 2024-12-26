@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Офис - Словарь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dictionary.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+            <p><h1>Офис</h1></p>
+        </div>
+        <nav>
+            <ul>
+                    <li><a href="description.html" class="active">Описание</a></li>
+                    <li><a href="dictionary.html">Словарь</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+        </nav>
+        <div class="user">
+            <span id="userLogin"></span>
+            <button id="logout">Выйти</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Словарь персонажей</h2>
+        <input type="text" id="search" placeholder="Поиск по имени">
+        <ul id="dictionaryList">
+            <li data-description="Майкл Скотт — менеджер отдела продаж.">Майкл Скотт</li>
+            <li data-description="Джим Халперт — продавец, любящий подшучивать над коллегами.">Джим Халперт</li>
+            <li data-description="Пэм Бисли — секретарь, влюблена в Джима.">Пэм Бисли</li>
+            <li data-description="Дуайт Шрут — помощник регионального менеджера,увлекается фермерством.">Дуайт Шрут</li>
+            <li data-description="Райан Ховард — стажер,амбициозный, но склонный к провалам.">Райан Ховард</li>
+            <li data-description="Энди Бернард — сотрудник отдела продаж,любит петь и играть на банджо.">Энди Бернард</li>
+            <li data-description="Анджела Мартин — бухгалтер,скрывает свою страсть к Дуайту.">Анджела Мартин</li>
+            <li data-description="Кевин Мэлоун — бухгалтер,немного простоватый, но у него неожиданно хороший музыкальный вкус.">Кевин Мэлоун</li>
+            <li data-description="Оскар Мартинес — бухгалтер,умный, аналитичный и часто саркастичный.">Оскар Мартинес</li>
+            <li data-description="Келли Капур — специалист по обслуживанию,болтливая, эксцентричная, одержима модой и драмами.">Келли Капур</li>
+        </ul>
+        <div id="description"></div>
+    </main>
+
+    <footer>
+        <p>Контакты: <a href="#">Телефон</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>&copy; 2024 Офис. Все права защищены.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
